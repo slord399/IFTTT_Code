@@ -1,7 +1,7 @@
 let ingredient_Text = Twitter.newTweetFromSearch.Text;
 
 // let searchTerm_Text_Testing =
-//　For Testing  'おはうづ' ;
+//　For Testing  '' ;
 
 let searchTerm_Text101 = 'おはよ';
 if (ingredient_Text.indexOf(searchTerm_Text101) !== -1) {
