@@ -1,7 +1,6 @@
-const ingredient_Text = Twitter.newTweetFromSearch.Text;
+var ingredient_Text = Twitter.newTweetFromSearch.Text;
 
-// Find all the occurrences of the keywords in the text.
-const greetings: string[] = [
+var greetings = [
   'おはよ',
   'おはっぱ',
   'おはやん',
@@ -73,31 +72,18 @@ const greetings: string[] = [
   'おはさめ',
   'おはうづ',
   'おはじゅい',
-'おはしら',
-  //
-  //
-  //
-  //
-  //
-
+  'おはしら',
   'お休みなさい',
   'おやすみなさい',
   'おやすみ',
   'しごおわ',
-  //
-  //
-  //
-  //
-  //
-  '#美少女発掘メーカー',
-  '#巨根',
-  '#見せ合い',
-  'dmm.co.jp',
 ];
 
-for (const greeting in greetings) {
+for (var i = 0; i < greetings.length; i++) {
+  var greeting = greetings[i];
   if (ingredient_Text.indexOf(greeting) !== -1) {
     // If a greeting is found, skip the rest of the code.
     MakerWebhooks.makeWebRequest.skip('Keyword Matched, Action Skipped!');
+    break;
   }
 }
