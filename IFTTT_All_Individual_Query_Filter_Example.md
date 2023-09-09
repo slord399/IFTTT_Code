@@ -397,22 +397,3 @@ if (ingredient_Text.indexOf(searchTerm_Text204) !== -1) {
 //
 //
 
-let searchTerm_Text301 = '#美少女発掘メーカー';
-if (ingredient_Text.indexOf(searchTerm_Text301) !== -1) {
-  MakerWebhooks.makeWebRequest.skip('Keyword Matched, Action Skipped!');
-}
-
-let searchTerm_Text302 = '#巨根';
-if (ingredient_Text.indexOf(searchTerm_Text302) !== -1) {
-  MakerWebhooks.makeWebRequest.skip('Keyword Matched, Action Skipped!');
-}
-
-let searchTerm_Text303 = '#見せ合い';
-if (ingredient_Text.indexOf(searchTerm_Text303) !== -1) {
-  MakerWebhooks.makeWebRequest.skip('Keyword Matched, Action Skipped!');
-}
-
-let searchTerm_Text304 = 'dmm.co.jp';
-if (ingredient_Text.indexOf(searchTerm_Text304) !== -1) {
-  MakerWebhooks.makeWebRequest.skip('Keyword Matched, Action Skipped!');
-}
