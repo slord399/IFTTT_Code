@@ -218,7 +218,7 @@ if (ingredient_Text.indexOf(searchTerm_Text143) !== -1) {
   MakerWebhooks.makeWebRequest.skip('Keyword Matched, Action Skipped!');
 }
 
-let searchTerm_Text144 = 'dmm.co.jp';
+let searchTerm_Text144 = 'おはじゅい';
 if (ingredient_Text.indexOf(searchTerm_Text144) !== -1) {
   MakerWebhooks.makeWebRequest.skip('Keyword Matched, Action Skipped!');
 }
@@ -409,5 +409,10 @@ if (ingredient_Text.indexOf(searchTerm_Text302) !== -1) {
 
 let searchTerm_Text303 = '#見せ合い';
 if (ingredient_Text.indexOf(searchTerm_Text303) !== -1) {
+  MakerWebhooks.makeWebRequest.skip('Keyword Matched, Action Skipped!');
+}
+
+let searchTerm_Text304 = 'dmm.co.jp';
+if (ingredient_Text.indexOf(searchTerm_Text304) !== -1) {
   MakerWebhooks.makeWebRequest.skip('Keyword Matched, Action Skipped!');
 }
