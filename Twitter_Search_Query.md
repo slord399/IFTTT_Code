@@ -1,4 +1,6 @@
-(test1 OR test2 OR test3) min_faves:x -"ignore1" -"ignore2" -"ignore3" -"ignore4" -"ignore5"
+Ref. https://developer.twitter.com/en/docs/twitter-api/enterprise/rules-and-filtering/operators-by-product
+
+(test1 OR test2 OR test3) -"ignore1" -"ignore2" -"ignore3" -"ignore4" -"ignore5"
 
 =Ignore=
 -keyword 　Not supported
@@ -19,7 +21,16 @@ filter:
 exclude:
 min_faves:
 min_retweet:
+-RT
 
+=Following Method has been added recently=
+-is:retweet
+-is:quote
+-is:reply
+has:videos
+has:mentions
+has:media
+has:links
 
 =Known Change=
 *Cannot use OR method on from: trigger
