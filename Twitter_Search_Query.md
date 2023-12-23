@@ -32,5 +32,8 @@ has:mentions
 has:media
 has:links
 
+=Possible Issue=
+Seems they broke "is" and "has" method?
+
 =Known Change=
 *Cannot use OR method on from: trigger
