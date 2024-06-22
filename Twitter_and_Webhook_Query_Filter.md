@@ -1,4 +1,4 @@
-Skip if matched with keyword + Output log entry ('Keyword Matched, Action Skipped!')
+Skip if **matched** with keyword + Output log entry ('Keyword Matched, Action Skipped!')
 
 *IFTTT seems only catch non-paid character limit only
 
@@ -31,7 +31,7 @@ if (ingredient_Text.indexOf(searchTerm_Text) !== -1) {
 
 =================
 
-Skip if matched with keyword + Output log entry ('Keyword Matched, Action Skipped!')
+Skip if **NOT matched** with keyword + Output log entry ('Keyword Matched, Action Skipped!')
 
 *IFTTT seems only catch non-paid character limit only
 
@@ -66,8 +66,12 @@ if (ingredient_Text.indexOf(searchTerm_Text) !== -1) {
 
 
 ===============
-Skip if matched keyword or username + Output log entry ('Keyword Matched, Action Skipped!')
-(Multi ingredient usage be bit tricky as it seems, you need to complete within 1 flow even has few ingredient)
+
+Skip if **matched keyword or username** + Output log entry ('Keyword Matched, Action Skipped!')
+
+*You don't need to worry about uppercase and lowercase with this code.
+
+(**Multi ingredient usage** be bit tricky as it seems, you need to complete within 1 flow even has few ingredient)
 
 ```
 var ingredient_Text = Twitter.newTweetFromSearch.Text;
@@ -107,7 +111,8 @@ if (!keywordMatched) {
     }
   }
 }
-```
+
 if (keywordMatched) {
   MakerWebhooks.makeWebRequest.skip('Keyword Matched, Action Skipped!');
 }
+```
