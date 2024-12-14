@@ -28,3 +28,6 @@ Write all trigger individually
 
 Write all trigger into simple var method
 [Link](IFTTT_var_Query_Filter_Example.md?plain=1)
+
+Write all trigger into imple var method (with mention count limit)
+[Link](IFTTT_var_and_mention-limit_Query_Filter_Example.md)
