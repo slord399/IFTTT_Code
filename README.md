@@ -2,7 +2,7 @@
 IFTTT related code
 
 
-Mainly Twitter Trigger and Webhook/Discord Bot Action combination.
+Mainly X (formaly Twitter) Trigger and Webhook/Discord Bot Action combination.
 
 
 
@@ -17,7 +17,7 @@ IFTTT Twitter(X) to Webhook Query Filter Template
 IFTTT Twitter(X) to discord Query Filter Template
 [Link](Twitter_and_discord_Query_Filter.md?plain=1)
 
-Webhook Settins Template
+Webhook Setting Template
 [Link](Webhook_Setting.md?plain=1)
 
 
