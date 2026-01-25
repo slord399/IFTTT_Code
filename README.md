@@ -31,3 +31,15 @@ Write all trigger into simple var method
 
 Write all trigger into imple var method (with mention count limit)
 [Link](IFTTT_var_and_mention-limit_Query_Filter_Example.md)
+
+Match specified keyword and sort into 2 channels
+[Link](yes-no_channel-devide.md)
+
+Match multiple keyword and sort into specific channel
+[Link](multi-keyword_sort-channels.md)
+
+Multi Inpute method, sort channel
+[Link](multi-flow_sort-channels,md)
+
+Load Balance flow into multi channel
+[Link](load-balance_multi-channel.md)
