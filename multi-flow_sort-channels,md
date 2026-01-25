@@ -1,0 +1,71 @@
+
+const title = Feed.newFeedItem.EntryTitle;
+const url = Feed.newFeedItem.EntryUrl;
+
+// 1. Define Phase 1 (Title) Keywords
+const titleKeywords = [
+  { key: "【速報】", action: MakerWebhooks.makeWebRequest2 },
+  { key: "【特集】", action: MakerWebhooks.makeWebRequest3 },
+  { key: "【動画】", action: MakerWebhooks.makeWebRequest4 },
+  { key: "【独自取材】", action: MakerWebhooks.makeWebRequest5 },
+  { key: "【解説】", action: MakerWebhooks.makeWebRequest6 },
+  { key: "【天気】", action: MakerWebhooks.makeWebRequest7 }
+];
+
+// 2. Define Phase 2 (URL) Keywords
+const urlKeywords = [
+  { key: "/abs/", action: MakerWebhooks.makeWebRequest8 },
+  { key: "/ctv/", action: MakerWebhooks.makeWebRequest9 },
+  { key: "/knb/", action: MakerWebhooks.makeWebRequest10 },
+  { key: "/ybc/", action: MakerWebhooks.makeWebRequest11 },
+  { key: "/jrt/", action: MakerWebhooks.makeWebRequest12 },
+  { key: "/ytv/", action: MakerWebhooks.makeWebRequest13 },
+  { key: "/tvi/", action: MakerWebhooks.makeWebRequest14 },
+  { key: "/rkc/", action: MakerWebhooks.makeWebRequest15 },
+  { key: "/fct/", action: MakerWebhooks.makeWebRequest16 },
+  { key: "/ybs/", action: MakerWebhooks.makeWebRequest17 },
+  { key: "/stv/", action: MakerWebhooks.makeWebRequest18 },
+  { key: "/rnc/", action: MakerWebhooks.makeWebRequest19 },
+  { key: "/nkt/", action: MakerWebhooks.makeWebRequest20 }
+];
+
+// 3. Find Matches using standard for-loops
+let matchedTitleIndex = -1;
+for (let i = 0; i < titleKeywords.length; i++) {
+  if (title.indexOf(titleKeywords[i].key) !== -1) {
+    matchedTitleIndex = i;
+    break;
+  }
+}
+
+let matchedUrlIndex = -1;
+for (let j = 0; j < urlKeywords.length; j++) {
+  if (url.indexOf(urlKeywords[j].key) !== -1) {
+    matchedUrlIndex = j;
+    break;
+  }
+}
+
+/**
+ * EXECUTION LOGIC
+ */
+
+// Handle WebRequest 1 (The Default)
+// This will SKIP if ANY match was found in title or URL
+if (matchedTitleIndex !== -1 || matchedUrlIndex !== -1) {
+  MakerWebhooks.makeWebRequest1.skip("Specific match found elsewhere.");
+}
+
+// Handle Phase 1 Actions (2-7)
+for (let k = 0; k < titleKeywords.length; k++) {
+  if (k !== matchedTitleIndex) {
+    titleKeywords[k].action.skip("Title did not match.");
+  }
+}
+
+// Handle Phase 2 Actions (8-20)
+for (let l = 0; l < urlKeywords.length; l++) {
+  if (l !== matchedUrlIndex) {
+    urlKeywords[l].action.skip("URL did not match.");
+  }
+}
