@@ -24,6 +24,7 @@ And....Twitter change API spec often.
 =Following Method has been removed recently=
 ```
 -nativetweets
+is:
 filter:
 exclude:
 min_faves:
@@ -31,20 +32,9 @@ min_retweet:
 -RT
 ```
 
-=Following Method has been added recently=
-```
--is:retweet
--is:quote
--is:reply
-has:videos
-has:mentions
-has:media
-has:links
-```
-
 =Possible Issue=
 ```
-Seems they broke "is" and "has" method?
+"is" and "has" seems removed.
 ```
 
 =Known Change=
