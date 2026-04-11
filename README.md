@@ -43,3 +43,6 @@ Multi Inpute method, sort channel
 
 Load Balance flow into multi channel
 [Link](load-balance_multi-channel.md)
+
+Skip Webhook action other than Public Holiday of JP/UK/US/CA
+[Link](IFTTT_Skip_Public_Holiday_Filter_Example.md)
