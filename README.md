@@ -9,16 +9,16 @@ Mainly X (formaly Twitter) Trigger and Webhook/Discord Bot Action combination.
 List of Contents
 =
 Twitter Search Query String Format
-[Link](Twitter_Search_Query.md?plain=1)
+[Link](Template/Twitter_Search_Query.md?plain=1)
 
 IFTTT Twitter(X) to Webhook Query Filter Template
-[Link](Twitter_and_Webhook_Query_Filter.md?plain=1)
+[Link](Template/Twitter_and_Webhook_Query_Filter.md?plain=1)
 
 IFTTT Twitter(X) to discord Query Filter Template
-[Link](Twitter_and_discord_Query_Filter.md?plain=1)
+[Link](Template/Twitter_and_discord_Query_Filter.md?plain=1)
 
 Webhook Setting Template
-[Link](Webhook_Setting.md?plain=1)
+[Link](Template/Webhook_Setting.md?plain=1)
 
 
 Sample
